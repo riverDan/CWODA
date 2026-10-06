@@ -1,0 +1,40 @@
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.venv/
+venv/
+.conda/
+.DS_Store
+
+# Local inputs and generated lists contain machine-specific paths.
+data/
+datasets/
+lists/
+manifests/
+
+# Training artifacts and large experimental files.
+results/
+runs/
+logs/
+checkpoints/
+feature/
+figures/
+*.pt
+*.pth
+*.ckpt
+*.mat
+*.npy
+*.npz
+*.png
+*.jpg
+*.jpeg
+*.tif
+*.tiff
+
+# Local credentials and environment files.
+.env
+.env.*
+*.pem
+*.key

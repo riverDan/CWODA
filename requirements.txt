@@ -1,0 +1,13 @@
+# Versions used for local verification with Python 3.12.
+# Install a matching PyTorch/PyTorchVision pair for your CPU or CUDA platform first.
+torch==2.2.2
+torchvision==0.17.2
+numpy==1.26.4
+scipy==1.17.1
+scikit-learn==1.7.2
+Pillow==10.4.0
+matplotlib==3.7.5
+seaborn==0.13.2
+pandas==2.2.3
+tqdm==4.67.1
+efficientnet-pytorch==0.7.1
