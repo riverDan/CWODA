@@ -71,7 +71,7 @@ for `D1` to `D2`, with `UE8` unknown:
 
 ```bash
 python prepare_lists.py \
-  --data-root /path/to/device14 \
+  --data-root /path/to/RFFI_NR \
   --source-domain D1 --target-domain D2 \
   --known-ues 1 2 3 4 5 6 7 --unknown-ues 8 \
   --output-dir lists/D1_D2_UE8
@@ -111,11 +111,11 @@ are excluded from Git. The main reported metrics include overall accuracy,
 known and unknown accuracy, HOS, AUROC, and OSCR. `--max_batches` is for smoke
 checks only and must not be used for reported experiments.
 
-The original project used the following 12 directed transfers:
+The public-release protocol specifies the following 12 directed transfers:
 
 ```text
 D1→D2  D1→D3  D2→D1  D2→D3  D3→D1  D3→D2
-P1→P2  P1→P4  P2→P1  P2→P4  P4→P1  P4→P2
+P1→P2  P1→P3  P2→P1  P2→P3  P3→P1  P3→P2
 ```
 
 Generate a new list directory and result code for each transfer and random
