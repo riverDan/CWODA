@@ -43,13 +43,14 @@ are bundled here.
 
 ## Dataset download
 
-The dataset contains measured uplink 5G PRACH signals from IoT UEs. A pseudo
-base station operated near 2.5 GHz, and a Rohde & Schwarz FSW signal analyzer
-captured the transmissions at 30.72 MS/s. D1–D3 denote three acquisition dates
-(January 16, March 20, and April 21, 2025), while P1–P3 denote three UE
-positions. These domains support cross-date and cross-position transfer
-experiments for known-UE identification and unknown-UE rejection; the model
-uses paired STFT and DSCG representations of the signals.
+The dataset contains measured uplink 5G PRACH signals from 14 IoT UEs
+(`UE1`–`UE14`). A pseudo base station operated near 2.5 GHz, and a Rohde &
+Schwarz FSW signal analyzer captured the transmissions at 30.72 MS/s. D1–D3
+denote three acquisition dates (January 16, March 20, and April 21, 2025),
+while P1–P3 denote three UE positions. These domains support cross-date and
+cross-position transfer experiments for known-UE identification and
+unknown-UE rejection. The model uses paired STFT and DSCG representations of
+the signals.
 
 The 5G PRACH dataset is shared as [RFFI_NR.zip](https://pan.baidu.com/s/1J2fqbXWZ-wjw525s5EPCCw)
 on Baidu Netdisk. Access code (提取码): `aqf1`.
