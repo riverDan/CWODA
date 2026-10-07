@@ -6,13 +6,11 @@ Fourier transform (STFT) and differential subcarrier graph (DSCG) images. It
 trains on labeled source UEs and adapts to an unlabeled target domain that may
 contain previously unseen UEs.
 
-This is a cleaned copy of the local `RFFI_OSDA_DSCG` research project. The
-original project and its experimental results remain separate. This repository
-contains training and evaluation code, a paired-image list generator, and the
-local source license. It does **not** contain raw recordings, STFT/DSCG images,
-pretrained weights, or code to convert raw IQ recordings into STFT/DSCG images.
-Review [third-party attributions and release conditions](THIRD_PARTY.md) before
-publishing this repository.
+This repository contains training and evaluation code and a paired-image list
+generator. Raw recordings, pretrained weights, and raw-IQ-to-image conversion
+code are not bundled. See
+[THIRD_PARTY.md](THIRD_PARTY.md) for inherited-code attribution and release
+conditions.
 
 ## Method and protocol
 
@@ -49,6 +47,15 @@ python -m pip install -r requirements.txt
 The ResNet-50 backbone requests ImageNet weights through PyTorchVision on the
 first run; download access or a populated PyTorch cache is required. No weights
 are bundled here.
+
+## Dataset download
+
+The 5G PRACH dataset is shared as [RFFI_NR.zip](https://pan.baidu.com/s/1J2fqbXWZ-wjw525s5EPCCw)
+on Baidu Netdisk. Access code (提取码): `aqf1`.
+
+After downloading and extracting the archive, set `--data-root` to the directory
+containing the D1, D2, D3, P1, P2, and P3 domain folders. The paired STFT and
+DSCG images must follow the layout described below.
 
 ## Input layout and list generation
 
