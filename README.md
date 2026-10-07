@@ -6,12 +6,6 @@ Fourier transform (STFT) and differential subcarrier graph (DSCG) images. It
 trains on labeled source UEs and adapts to an unlabeled target domain that may
 contain previously unseen UEs.
 
-This repository contains training and evaluation code and a paired-image list
-generator. Raw recordings, pretrained weights, and raw-IQ-to-image conversion
-code are not bundled. See
-[THIRD_PARTY.md](THIRD_PARTY.md) for inherited-code attribution and release
-conditions.
-
 ## Method and protocol
 
 The closed-set branch is trained on the seven source-known UEs and then frozen.
@@ -28,8 +22,7 @@ unknown prediction class by the model. The target adaptation list has `-1` in
 every label column. The target evaluation list references the same images but
 contains labels used only to report metrics. This is **transductive evaluation**:
 the target images are seen without labels during adaptation and then evaluated
-with labels. Do not use this setup as evidence of performance on a held-out
-target set.
+with labels.
 
 ## Installation
 
